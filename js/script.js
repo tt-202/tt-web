@@ -7,8 +7,6 @@ let lastName = "";
 
 // --- LOGIN FUNCTION ---
 function doLogin() {
-    console.log("doLogin from external file");
-
     userId = 0;
     firstName = "";
     lastName = "";
