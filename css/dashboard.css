@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: #7a7b80;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+.box-container,
+.about-container {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.box-container h3,
+.about-container h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 14px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 20px;
+  background-color: #eee;
+  font-size: 14px;
+}
+
+.submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #999;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #777;
+}
+
+.about-container p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.logout-button {
+  margin: 20px auto;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/*this for small device*/
+@media (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .wrapper h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .wrapper ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .box-container,
+  .about-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .submit, .input-field {
+    font-size: 13px;
+  }
+}

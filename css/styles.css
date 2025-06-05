@@ -1,0 +1,226 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*background: url(images/p.png) no-repeat;*/ 
+    background: url(../images/p.png) no-repeat; /* local path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+
+.nav-button {
+    position: fixed;
+    top:0;
+    right:0;
+    display: flex;
+    gap: 10px;
+
+}
+
+.btn, .btn-white{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    top:0;
+    right:0;
+    display: flex;
+}
+
+
+.btn {
+    background-color: #555;
+    color: white;
+    border: 1px solid #ccc
+}
+
+.btn-white {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.box-containner{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 512px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 12px;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 2; 
+}
+
+.login, .register {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+
+.login{
+    left: 4px;
+}
+
+
+.register{
+    right:-520px;
+   
+}
+    
+
+.top span{
+    color: white;  
+    padding: 10px 10px;
+}
+
+.top span a{
+    font-weight: 500;
+    color: white;
+    margin-left: 5px;
+    text-decoration: none;
+
+}
+
+h3{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-field{
+    font-size: 15px;
+    font-weight: 500;
+    background: lightgray;
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(81, 77, 77);
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #999;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.submit:hover {
+    font-weight: 700;
+}
+
+.two-col {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+label a {
+    color: #1034a6;
+    text-decoration: none;
+}
+
+label a:hover {
+    text-decoration: underline;
+}
+
+.form-show-left {
+    left: 4px !important;
+}
+
+.form-hide-left {
+    left: -510px !important;
+}
+
+.form-show-right {
+    right: 5px !important;
+}
+
+.form-hide-right {
+    right: -520px !important;
+}
+
+.btn-active {
+    background-color: #555;
+    color: white;
+    border: 1px solid #ccc;
+}
+
+.btn-inactive {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.greeting h2 {
+    color: white;
+    font-size: 30px;
+    margin-top:20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.option-prompt {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+.option-prompt a {
+    font-weight: 500;
+    color: pink;
+    margin-left: 5px;
+    text-decoration: underline;
+    transition: all 0.2s ease;
+}
+
+.option-prompt a:hover {
+    box-shadow: 0 0 0 1px pink;
+    border-radius: 4px;
+}
+
+.alert {
+    font-weight: bold;
+    font-size: 20px;
+    color: red;
+    margin-top: 30px;
+}
+
+.alert.success {
+    color: green;
+}

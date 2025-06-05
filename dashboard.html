@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>COP4331 | Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <script type="text/javascript" src="js/script.js"></script>
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <div class="wrapper">
+    <img src="images/logo.png" alt="Sapling Circle Logo" class="logo" />
+    <ul>
+      <li><a href="#" class="link" onclick="event.preventDefault(); showAddContact()">Add Contact</a></li>
+      <li><a href="#" class="link" onclick="event.preventDefault(); showSearchContact()">Search Contact</a></li>
+      <li><a href="#" class="link" onclick="event.preventDefault(); showAbout()">About</a></li>
+    </ul>
+  </div>
+
+  <!-- Add Contact Section -->
+  <div class="box-container" id="add-contact">
+    <h3>Add Contact</h3>
+    <div class="form-box">
+      <input type="text" class="input-field" placeholder="First Name" id="contactFirstName" />
+    </div>
+    <div class="form-box">
+      <input type="text" class="input-field" placeholder="Last Name" id="contactLastName" />
+    </div>
+    <div class="form-box">
+      <input type="text" class="input-field" placeholder="Phone Number" id="contactPhone" />
+    </div>
+    <div class="form-box">
+      <input type="text" class="input-field" placeholder="Email" id="contactEmail" />
+    </div>
+    <div class="form-box">
+      <input type="submit" class="submit btn" value="Add Contact" onclick="addContact()" />
+    </div>
+  </div>
+
+  <!-- Search Contact Section -->
+  <div class="box-container hidden" id="search-contact">
+    <h3>Search Contact</h3>
+    <div class="form-box">
+      <input type="text" class="input-field" placeholder="Enter name, email or phone" id="searchInput" />
+    </div>
+    <div class="form-box">
+      <input type="submit" class="submit btn" value="Search" onclick="handleSearch()" />
+    </div>
+    <div class="form-box contact-results" id="searchResults"></div>
+  </div>
+
+  <!-- About Section -->
+  <div class="about-container hidden" id="about">
+    <h2>About Us</h2>
+    <p>
+      <strong>Hall, Madson:</strong> Database, API<br />
+      <strong>Lee, Brian:</strong> Project Manager<br />
+      <strong>Chaj-Mejia, Junior:</strong> Front-end<br />
+      <strong>Tran, Tuyen:</strong> Front-end<br />
+    </p>
+  </div>
+
+  <!-- Logout Button -->
+  <div class="logout-button">
+    <button class="btn" onclick="doLogout()">Logout</button>
+  </div>
+
+  <script src="js/script.js"></script>
+  
+</body>
+</html>
